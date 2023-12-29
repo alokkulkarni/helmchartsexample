@@ -1,0 +1,15 @@
+server:
+  port: 7676
+
+spring:
+    application:
+        name: spring-boot-helm
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+#  kubectl create secret docker-registry regcred --docker-server=<your-registry-server> --docker-username=<your-name> --docker-password=<your-pword> --docker-email=<your-email>
